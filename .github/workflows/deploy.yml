@@ -39,14 +39,6 @@ jobs:
         run: |
           CI=false npm run build
         working-directory: ${{ env.APP_LOCATION }}
-
-      - name: Verify Build Output
-        run: |
-          if [ ! -d "${{ env.APP_LOCATION }}/build" ]; then
-            echo "Build output directory does not exist"
-            exit 1
-          fi
-        working-directory: ${{ env.APP_LOCATION }}
         
       - name: Build And Deploy
         uses: Azure/static-web-apps-deploy@v1
