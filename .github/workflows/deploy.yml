@@ -2,7 +2,7 @@ name: Deploy to Azure Static Website
 
 env:
   APP_LOCATION: "open-station-app" # location of your client code
-  API_LOCATION: "src/OpenStation.Api" # location of your api source code - optional
+  #API_LOCATION: "src/OpenStation.Api" # location of your api source code - optional
   OUTPUT_LOCATION: "build" # location of client code build output
   
 on:
