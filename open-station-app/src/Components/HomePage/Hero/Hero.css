@@ -1,0 +1,76 @@
+.hero {
+    border-radius: 8px;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    /* Path to your image */
+    /* Centers the image */
+    background: url('../../../assets/hero-image-2.png') no-repeat center center/cover;
+}
+.hero-content {
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-heading {
+    font-family: 'Fabrico', sans-serif; /* Use Fabrico font */
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hero-content p {
+    font-family: 'Fabrico', sans-serif; /* Use Fabrico font */
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 600px; /* Increased max-width */
+    margin: 20px auto; /* Added margin for spacing */
+    background-color: #ffffff; /* White background */
+    border-radius: 30px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border for modern look */
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 12px; /* Increased padding */
+    border: none;
+    outline: none;
+    font-size: 18px; /* Larger font size */
+    border-radius: 30px; /* Rounded corners for input */
+}
+
+.search-bar button {
+    padding: 20px 20px;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+    margin-left: -1px;
+}
+
+.search-bar button:hover {
+    background-color: #7b3405;
+}
+
+.btn {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}

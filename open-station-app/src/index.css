@@ -1,0 +1,45 @@
+/* Define font-face for Exo */
+@font-face {
+  font-family: 'Exo';
+  src: url('https://fonts.gstatic.com/s/exo/v12/8An1b_zJ4GHV9Lffg5FDQQ.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply Exo font to specific elements */
+.hero-heading {
+  font-family: 'Exo', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 48px;
+  /* Other styles */
+}
+
+.hero-subheading {
+  font-family: 'Exo', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 24px;
+  font-style: italic;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  height: 100%;
+}
