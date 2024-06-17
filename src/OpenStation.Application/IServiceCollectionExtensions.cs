@@ -1,7 +1,7 @@
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace VacationStation.Application;
+namespace OpenStation.Application;
 
 public static class IServiceCollectionExtensions
 {

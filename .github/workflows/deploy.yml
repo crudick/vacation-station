@@ -1,5 +1,10 @@
 name: Deploy to Azure Static Website
 
+env:
+  APP_LOCATION: "open-station-app/src" # location of your client code
+  API_LOCATION: "src/OpenStation.Api" # location of your api source code - optional
+  OUTPUT_LOCATION: "build" # location of client code build output
+  
 on:
   push:
     branches:
@@ -10,12 +15,16 @@ on:
       - main
 
 jobs:
-  build:
+  build_and_deploy:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
+    name: Build and Deploy
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+        with:
+          submodules: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -28,10 +37,12 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to Azure Static Website
-        uses: azure/static-web-apps-deploy@v1
+      - name: Build And Deploy
+        uses: Azure/static-web-apps-deploy@1a947af9992250f3bc2e68ad0754c0b0c11566c9
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BLACK_TREE_0179E0410 }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          app_location: 'build'
-          output_location: ''
+          action: "upload"
+          app_location: ${{ env.APP_LOCATION }}
+          api_location: ${{ env.API_LOCATION }}
+          output_location: ${{ env.OUTPUT_LOCATION }}

@@ -1,4 +1,4 @@
-namespace VacationStation.Application.Interfaces;
+namespace OpenStation.Application.Interfaces;
 
 public interface IRepository<T>
 {

@@ -1,5 +1,5 @@
 using Microsoft.Azure.Cosmos;
-using VacationStation.Application.Interfaces;
+using OpenStation.Application.Interfaces;
 using VacationStation.Domain.Entities;
 
 namespace VacationStation.Persistence.Repositories;

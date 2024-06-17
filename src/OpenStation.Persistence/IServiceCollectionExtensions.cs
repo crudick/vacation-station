@@ -1,9 +1,9 @@
 using Elastic.Clients.Elasticsearch;
 using Elastic.Transport;
 using Microsoft.Azure.Cosmos;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Nest;
 
 namespace VacationStation.Persistence;
 
@@ -11,6 +11,10 @@ public static class IServiceCollectionExtensions
 {
     public static IServiceCollection AddPersistence(this IServiceCollection services, IConfiguration configuration)
     {
+
+        services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseNpgsql(configuration.GetConnectionString("SqlDb")));
+        
         services.AddSingleton<CosmosClient>(sp =>
         {
             var connectionString = configuration.GetConnectionString("Cosmos");
