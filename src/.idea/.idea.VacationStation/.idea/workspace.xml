@@ -12,49 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="288f9131-d8f6-42ba-9676-1c8e094a5e67" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.VacationStation/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/ApplicationUser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenStation.Persistence/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenStation.Persistence/OpenStation.Persistence.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.github/workflows/azure-static-web-apps-black-tree-0179e0410.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.github/workflows/azure-static-web-apps-black-tree-0179e0410.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.github/workflows/deploy.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VacationStation/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VacationStation/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VacationStation/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VacationStation/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Api/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Api/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Api/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Api/VacationStation.Api.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Api/VacationStation.Api.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Api/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Api/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Application/IServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Application/IServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Application/Interfaces/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Application/Interfaces/IRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Application/VacationStation.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Application/OpenStation.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Class1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/Accessability.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/Accessability.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/AdditionalFeatures.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/AdditionalFeatures.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/Amenities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/Amenities.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/ContactInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/ContactInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/Employee.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/FoodAndBeverage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/FoodAndBeverage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/FuelInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/FuelInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/GasStation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/GasStation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/Location.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/Location.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/Media.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/Media.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/OperationalDetails.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/OperationalDetails.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/Parking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/Parking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/Review.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/Review.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/ReviewsAndRatings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/ReviewsAndRatings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/SafetyAndSecurity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/SafetyAndSecurity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/Entities/Services.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/Entities/Services.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Domain/VacationStation.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Domain/OpenStation.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Persistence/IServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Persistence/IServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Persistence/Repositories/GasStationRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.Persistence/Repositories/GasStationRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.Persistence/VacationStation.Persistence.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationStation.sln" beforeDir="false" afterPath="$PROJECT_DIR$/OpenStation.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VacationStation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VacationStation/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
