@@ -42,7 +42,7 @@ jobs:
 
       - name: Verify Build Output
         run: |
-          if [ ! -d "${{ env.APP_LOCATION }}/build" ]; then
+          if [ ! -d "${{ env.OUTPUT_LOCATION }}" ]; then
             echo "Build output directory does not exist"
             exit 1
           fi
