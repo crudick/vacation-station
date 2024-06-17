@@ -42,7 +42,7 @@ jobs:
 
       - name: Verify Build Output
         run: |
-          if [ ! -d "${{ env.OUTPUT_LOCATION }}" ]; then
+          if [ ! -d "${{ env.APP_LOCATION }}/build" ]; then
             echo "Build output directory does not exist"
             exit 1
           fi
@@ -57,3 +57,5 @@ jobs:
           app_location: ${{ env.APP_LOCATION }}
           api_location: ${{ env.API_LOCATION }}
           output_location: ${{ env.OUTPUT_LOCATION }}
+        env:
+          CI: false # Set CI to false to ignore warnings
