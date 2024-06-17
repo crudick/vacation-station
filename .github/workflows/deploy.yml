@@ -36,7 +36,8 @@ jobs:
         working-directory: ${{ env.APP_LOCATION }}
 
       - name: Build
-        run: npm run build
+        run: |
+          CI=false npm run build
         working-directory: ${{ env.APP_LOCATION }}
 
       - name: Build And Deploy
