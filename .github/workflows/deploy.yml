@@ -1,7 +1,7 @@
 name: Deploy to Azure Static Website
 
 env:
-  APP_LOCATION: "open-station-app/src" # location of your client code
+  APP_LOCATION: "open-station-app" # location of your client code
   API_LOCATION: "src/OpenStation.Api" # location of your api source code - optional
   OUTPUT_LOCATION: "build" # location of client code build output
   
@@ -40,8 +40,16 @@ jobs:
           CI=false npm run build
         working-directory: ${{ env.APP_LOCATION }}
 
+      - name: Verify Build Output
+        run: |
+          if [ ! -d "${{ env.APP_LOCATION }}/build" ]; then
+            echo "Build output directory does not exist"
+            exit 1
+          fi
+        working-directory: ${{ env.APP_LOCATION }}
+        
       - name: Build And Deploy
-        uses: Azure/static-web-apps-deploy@1a947af9992250f3bc2e68ad0754c0b0c11566c9
+        uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BLACK_TREE_0179E0410 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
