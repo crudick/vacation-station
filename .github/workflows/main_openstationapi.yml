@@ -31,7 +31,6 @@ jobs:
 
       - name: Build with dotnet
         run: dotnet build src/OpenStation.Api/OpenStation.Api.csproj --configuration Release
-        working-directory: ${{ env.DOTNET_ROOT }}
 
       - name: dotnet publish
         run: dotnet publish src/OpenStation.Api/OpenStation.Api.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
