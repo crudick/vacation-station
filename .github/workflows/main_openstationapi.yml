@@ -3,8 +3,15 @@
 
 name: Build and deploy ASP.Net Core app to Azure Web App - OpenStationApi
 
+env:
+  DOTNET_ROOT: "src/OpenStation.Api" # location of your client code
+  
 on:
   push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
     branches:
       - main
   workflow_dispatch:
@@ -24,6 +31,7 @@ jobs:
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
+        working-directory: ${{ env.APP_LOCATION }}
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
